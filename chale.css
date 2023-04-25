@@ -1,0 +1,227 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #E5E5E5;;
+}
+.areas {
+    display: flex;
+}
+
+
+/*Area do cabeçalho da pagina*/
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #3195bd;
+}
+.AreaLogosDasEmpresas {
+    display: flex;
+    justify-content: center;
+}
+.logoaluraeoracle {
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 210px;
+    height: 35px;
+}
+.logoalura {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+/*Final do cabeçalho da pagina*/
+
+
+
+
+
+
+/*Começo da area 1*/
+.area1 {
+    display: flex;
+    flex-direction: column;
+}
+.areadetexto input {
+    width: 600px;
+    height: 48px;
+    margin-left: 150px;
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    font-family: 'Inter';
+    color: #0A3871;
+    border: none;
+    background-color: #E5E5E5;
+}
+.areadetexto ::placeholder {
+    color: #3195bd;
+}
+.areadetexto input:focus {
+    outline: none;
+  }
+.sessaocrip {
+    margin-top: 350px;
+}
+.areadeaviso {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 150px;
+}
+.areadeaviso p {
+    color: rgb(148, 161, 161);
+    margin-left: 10px;
+}
+.stylebutton {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: #0A3871;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+.stylebutton:hover {
+    background-color: #5c7680;
+}
+#buttondescriptografar {
+    margin-left: 20px;
+}
+.areabotoes {
+    margin-left: 150px;
+    display: flex;
+    margin-top: 25px;
+}
+/* Final da area 1*/
+
+
+
+
+
+/*Começo da area 2*/
+.area2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 400px;
+    height: 525px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(29, 66, 185, 0.08);
+    border-radius: 32px;
+    border:1px solid #7f898d;
+    padding: 20px;
+}
+.resultadoCrip {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #5c7680;
+}
+#areadetextoarea {
+    font-size: 25px;
+    margin-top: 15px;
+    height: 450px;
+    width: 360px;
+    resize: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+#areadetextoarea img {
+    margin-top: 30px;
+    height: 280px;
+    width: 280px;
+}
+
+
+
+.textodefundo {
+    font-size: 12px;
+    margin-top: 10px;
+}
+/*Fim area 2*/
+
+
+
+
+
+
+  /* Area do rodapé  (começo)*/
+.footer {
+    margin-top: 40px;
+    background-color: #3195bd;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.areaimagens {
+    margin-left: 20px;
+}
+.logoGit,
+.logoLink {
+    width: 40px;
+    height: 40px;
+}
+  /* Area do rodapé (Final)*/ 
+
+  @media only screen and (max-width: 418px) {
+    .AreaLogosDasEmpresas {
+        margin-right: 60px;
+        margin-left: 0px;
+    }
+    .areas {
+        display: block;
+        margin-left: 0px;
+    }
+    .area1 input,
+    .area1 .areadeaviso {
+        margin: 10px;
+    }
+    .area1 {
+        margin-left: 8px;
+    }
+    .area2 {
+        margin:55px 0px 0px 0px;
+        width:360px
+    }
+    .areabotoes {
+        margin: 0px 90px 0px 30px;
+    }
+    .sessaocrip {
+        margin-top: 125px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .footer {
+        justify-content: left;
+    }
+}
+
+@media only screen and (min-width:420px) and (max-width: 1190px) {
+    .areas {
+        display: block;
+        align-items: center;
+        margin-left: 180px;
+    }
+    .area2 {
+        margin-left: 0px;
+    }
+    .areadetexto #inputdetexto {
+        margin-top: 20px;
+    }
+    .area1 input,
+    .area1 .areadeaviso {
+        margin: 0px;
+    }
+    .area1 .areabotoes {
+        margin-left: 0px;
+    }
+}
